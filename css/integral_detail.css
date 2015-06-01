@@ -1,0 +1,442 @@
+@charset "utf-8";
+
+.wrap {
+	margin: 0 auto;
+}
+.main {
+	width: 100%;
+}
+/*积分明细开始*/
+.graldel li {
+	width: 93%;
+	height: 1.99rem;
+	border-bottom: 0.05rem solid #cdcdcd;
+	padding: 0.53rem 3% 0 4%;
+	background: #fff;
+}
+.graldel li a {
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 1.46rem;
+	color: #585858;
+}
+.graldel li p {
+	float: left;
+	width: 51%;
+	height: 1.46rem;
+	font-size: 0.6rem;
+	line-height: 0.75rem;
+}
+.graldel-integral {
+	float: left;
+	width: 40%;
+	height: 1.99rem;
+	font-size: 0.5rem;
+	color: #999;
+	padding-left: 9%;
+}
+.graldel-integral span {
+	display: block;
+	width: 100%;
+	height: 0.73rem;
+	font-size: 0.5rem;
+	line-height: 0.73rem;
+	color: #999;
+}
+.graldel li em {
+	float: right;
+	margin-top: 0.5rem;
+	font-size: 0.5rem;
+	line-height: 0.73rem;
+	color: #ff7d00;
+}
+.graldel-load {
+	width:33%;
+	height: 2.5rem;
+	font-size: 0.6rem;
+	line-height: 2.5rem;
+	text-align: center;
+	padding: 0 33.5%; 
+	background: #f6f6f6;
+}
+/*积分明细结束*/
+/*积分体现*/
+/*.gralflect {
+	width: 100%;
+	margin-top: 0.55rem;
+	background: #f6f6f6;
+}*/
+.gralflect li {
+	width: 62%;
+	height: 0.59rem;
+	border-bottom: 0.05rem solid #f2f2f2;
+	padding: 0.88rem 33% 0.7rem 5%; 
+	background: #fff;
+}
+.gralflect li p {
+	width: 100%;
+	height: 0.59rem;
+	font-size: 0.6rem;
+	line-height: 0.59rem;
+	color: #585858;
+}
+.gralflect li span {
+	padding-left: 7%;
+
+}
+.gralflect li em {
+	margin: 0 4%;
+}
+.gralflect-time {
+	width: 95%;
+	height: 0.5rem;
+	font-size: 0.5rem;
+	line-height: 0.5rem;
+	color: #999;
+	padding-left: 5%;
+	margin: 0.55rem 0 0.78rem 0;
+}
+.gralflect-next {
+	width: 94%;
+	height: 2rem;
+	margin: 0 auto;
+	border-radius: 0.2rem;
+	background: #ff7d00;
+}
+.gralflect-next a {
+	display: block;
+	width: 100%;
+	height: 2rem;
+	font-size: 0.75rem;
+	text-align: center;
+	line-height: 2rem;
+	color: #fff;
+}
+/*积分体现结束*/
+/*积分提现开始*/
+.gralcash {
+	width: 40%;
+	height: 6.35rem;
+	padding: 1.73rem 30% 1.6rem 30%;
+	background: #f6f6f6;
+}
+.gralcash-integral {
+	width: 100%;
+	height: 3.18rem;
+	border: 0.05rem solid #ff7d00;
+	border-radius: 50%;
+	padding: 1.6rem 0;
+}
+.gralcash-integral p {
+	font-size: 1.5rem;
+	text-align: center;
+	line-height: 1.59rem;
+	color: #ff7d00;
+}
+.gralcash-withdrawals {
+	width: 94%;
+	height: 2rem;
+	border-radius: 0.13rem;
+	margin: 0 auto;
+	background: #ff7d00;
+}
+.gralcash-withdrawals a {
+	display:block;
+	width: 100%;
+	height: 2rem;
+	font-size: 0.75rem;
+	text-align: center;
+	line-height: 2rem;
+}
+/*积分体现结束*/
+/*宝贝评价*/
+.evalu {
+	width: 94%;
+	padding: 0 3%;
+}
+.evalu dl {
+	width: 100%;
+	height: 3.45rem;
+}
+.evalu dt {
+	float: left;
+	width: 21%;
+	height: 2.95rem;
+	margin-right: 3%;
+	padding-top: 0.5rem;
+}
+.evalu dt a {
+	display: block;
+}
+.evalu dt img {
+	display: block;
+	width: 100%;
+	height: 2.5rem;
+	border-radius: 5px;
+	border: 1px solid #999;
+}
+.evalu dd {
+	float: left;
+	width: 76%;
+	height: 2.73rem;
+	padding-top: 0.72rem;
+}
+.evalu dd p {
+	overflow: hidden;
+	font-size: 0.6rem;
+	width: 65%;
+	height: 1.38rem;
+	color: #585858;
+	line-height: 0.7rem;
+}
+.evalu dd em {
+	font-size: 0.6rem;
+	color: #ff7d00;
+	line-height: 0.78rem; 
+}
+.evalu-comment {
+	width: 100%;
+	height: 8.4rem;
+}
+.evalu-text {
+	position: relative;
+	float: left;
+	width: 84%;
+	height: 1.45rem;
+	margin-top: 0.13rem;
+	border: 1px solid #ececec;
+	border-radius: 0.13rem;
+	background: #f9f9f9;
+}
+.evalu-text input {
+	position: absolute;
+	left: 5%;
+	top: 0.23rem;
+	width: 95%;
+	height: 1rem;
+	border: none;
+	outline:medium;
+	background:#f9f9f9;
+	font-size: 0.5rem;
+	line-height: 1rem;
+}
+.evalu-photo {
+	position: relative;
+	float: right;
+	width: 12%;
+	height: 1.79rem;
+	border-radius: 50%;
+	background: url(../images/photo.png) no-repeat;
+	background-size: 100%;
+}
+.evalu-photo input {
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-size: 12px;
+	opacity: 0;
+}
+.evalu-photo label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1.76rem;
+	background: url(../images/photo.png) no-repeat;
+	background-size: 100%;
+}
+.evalu-star {
+	width: 70%;
+	height: 1.43rem;
+	padding: 1.2rem 15% 1.5rem 15%
+}
+.evalu-star span {
+	float: left;
+	width: 15%;
+	height: 1.45rem;
+	margin-right: 5%;
+	background: url(../images/star.png)no-repeat;
+	background-size: 100%;
+}
+.evalu-send {
+	width: 100%;
+	height: 2rem;
+	border-radius: 0.13rem;
+	background: #ff7d00;
+}
+.evalu-send a {
+	display:block;
+	width: 100%;
+	height: 2rem;
+	font-size: 0.75rem;
+	text-align: center;
+	line-height: 2rem;
+}
+
+/*宝贝评价结束*/
+/*如何获得积分开始*/
+.grarule {
+	width: 94%;
+	padding: 0 3%;
+}
+.grarule dt {
+	font-size: 0.65rem;
+	line-height: 1.57rem;
+	color: #585858;
+}
+.grarule dd {
+	font-size: 0.6rem;
+	line-height: 1rem;
+	color: #585858;
+}
+/*如何获取积分结束*/
+/*在线咨询开始*/
+.online {
+	width: 100%;
+	
+}
+.online-chat {
+	width: 94%;
+	padding: 0 3%;
+	padding-top: 0.5rem;
+}
+.online-other {
+	float: left;
+	width: 100%;
+	min-height: 2.9rem;
+	margin-bottom: 0.25rem;
+}
+.online-other dt {
+	float: left;
+	width: 19%;
+	height: 2.9rem;
+	margin-right: 2%;
+	background: url(../images/man_bg.png) no-repeat;
+	background-size: 100%;
+}
+.online-other dt a {
+	display: block;
+	width: 100%;
+	height: 2.9rem;
+}
+.online-other dd {
+	float: left;
+	width: 79%;
+	margin-top: 0.63rem;
+}
+.online-other dd p {
+	float: right;
+	width: 96%;
+	margin-left: 4%;
+	line-height: 1rem;
+	
+}
+.online-other dd span {
+	float: left;
+	font-size: 0.6rem;	
+	color: #000;
+	padding: 0 2%;
+	border-radius: 0.3rem;	
+	background: #fff;
+}
+
+.online-our {
+	display: none;
+	float: left;
+	width: 100%;
+	min-height: 2.9rem;
+	margin-bottom: 0.25rem;
+}
+.online-our dt {
+	float: right;
+	width: 19%;
+	height: 2.9rem;
+	margin-right: 2%;
+	background: url(../images/man_bg.png) no-repeat;
+	background-size: 100%;
+}
+.online-our dt a {
+	display: block;
+	width: 100%;
+	height: 2.9rem;
+}
+.online-our dd {
+	float: right;
+	width: 79%;
+	margin-top: 0.63rem;
+}
+.online-our dd p {
+	margin-right: 4%;
+	float: left;
+	width: 96%;
+	line-height: 1rem;
+	padding: 0 2%;
+}
+.online-our dd span {
+	float: right;
+	font-size: 0.6rem;	
+	color: #000;
+	padding: 0 2%;
+	border-radius: 0.3rem;	
+	background: #e6ce98;
+}
+.qqFace{
+	position: relative;
+	left: 0;
+	margin-top:-200px;
+	background:#fff;
+	padding:2px;
+	border:1px #dfe6f6 solid;
+} 
+.qqFace table td{
+	padding:0px;
+} 
+
+.online-send {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 94%;
+	height: 1.53rem;
+	padding: 0.38rem 3% 0.5rem 3%;
+	background: #fff;
+	_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight));
+}
+.online-expression {
+	float: left;
+	width: 10%;
+	height: 1.5rem;
+	margin-top: 0.13rem;
+	background: url(../images/expression.png) no-repeat;
+	background-size: 100%;
+}
+.online-text {
+	float: left;
+	width: 70%;
+	height: 1.5rem;
+	margin: 0 4%;
+	border: 1px solid #818181;
+	border-radius: 0.13rem;
+}
+.online-text input {
+	width: 96%;
+	height: 1rem;
+	font-size: 0.6rem;
+	margin-left: 3%;
+	color: #000;
+	border: none;
+	outline:medium;
+
+}
+.online-send span {
+	float: right;
+	display: block;
+	width: 10%;
+	height: 1.5rem;
+	font-size: 0.75rem;
+	color: #999;
+	line-height: 1.5rem;
+}

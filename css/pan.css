@@ -1,0 +1,218 @@
+@charset "utf-8";
+/*关于我们*/
+.aboutus-content {
+	width: 100%;
+	height: 11.35rem;
+}
+.aboutus-content img {
+	display: block;
+	width: 46.88%;
+	height: 7.5rem;
+	margin: 0 auto;
+	padding: 1.5rem 0 0.93rem 0;
+}
+.aboutus-content p {
+	width: 100%;
+	height: 0.7rem;	
+	line-height: 0.7rem;
+	font-size: 0.7rem;
+	text-align: center;
+}
+.aboutus-footer {
+	width: 93.84%;
+	height: 2rem;
+	padding: 0 3.13%;
+}
+.aboutus-footer a {
+	display: block;
+	width: 100%;
+	height: 2rem;
+	background: #ff7d00;
+	color: #fff;
+	line-height: 2rem;
+	text-align: center;
+	font-size: 0.75rem;
+	border-radius: 0.13rem;
+}
+/*地址管理*/
+.addrmge-content {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	top: 0;
+	bottom: 2.45rem;
+}
+.addrmge-content ul {
+	width: 100%;
+}
+.addrmge-content li {
+	width: 100%;
+	height: 2.6rem;
+	margin-bottom: 0.51rem;
+	background: #fff;
+}
+.addrmge-content li div {
+	width: 100%;
+	height: 1.6rem;
+	color: #585858;
+	line-height: 1.6rem;
+	font-size: 0.6rem;
+}
+.addrmge-content h2 {
+	float: left;
+	width: 40%;
+	height: 1.6rem;
+	padding-left: 4.06%;
+}
+.addrmge-content h3 {
+	float: right;
+	width: 40%;
+	height: 1.6rem;
+	padding-right: 3.13%;
+	text-align: right;
+}
+.addrmge-content p {
+	width: 92.81%;
+	height: 1rem;
+	padding: 0 3.13% 0 4.06%;
+}
+.addrmge-content p a{
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 1rem;
+	color: #999;
+	font-size: 0.6rem;
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+}
+.addrmge-footer {
+	width: 93.84%;
+	height: 2rem;
+	padding: 0 3.13%;
+}
+.addrmge-footer a {
+	display: block;
+	width: 100%;
+	height: 2rem;
+	background: #ff7d00;
+	color: #fff;
+	line-height: 2rem;
+	text-align: center;
+	font-size: 0.75rem;
+	border-radius: 0.13rem;
+}
+/*我的收货地址*/
+.myaddr-content {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	top: 0;
+	bottom: 2.45rem;
+}
+.myaddr-content li {
+	width: 100%;
+	height: 2.6rem;
+	margin-bottom: 0.5rem;
+	background: #fff;
+}
+.myaddr-content li div {
+	width: 100%;
+	height: 1.6rem;
+	color: #585858;
+	line-height: 1.6rem;
+	font-size: 0.6rem;
+}
+.myaddr-content h2 {
+	float: left;
+	width: 40%;
+	height: 1.6rem;
+	padding-left: 4.06%;
+}
+.myaddr-content h3 {
+	float: right;
+	width: 40%;
+	height: 1.6rem;
+	padding-right: 3.13%;
+	text-align: right;
+}
+.myaddr-content p {
+	width: 92.81%;
+	height: 1rem;
+	padding: 0 3.13% 0 4.06%;
+}
+.myaddr-content p a{
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 1rem;
+	color: #999;
+	font-size: 0.6rem;
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+}
+.myaddr-footer {
+	width: 93.84%;
+	height: 2rem;
+	padding: 0 3.13%;
+}
+.myaddr-footer a {
+	display: block;
+	width: 100%;
+	height: 2rem;
+	background: #ff7d00;
+	color: #fff;
+	line-height: 2rem;
+	text-align: center;
+	font-size: 0.75rem;
+	border-radius: 0.13rem;
+}
+/*添加新地址*/
+.newaddr-contend {
+	width: 100%;
+	height: 14.5rem;
+	background: #fff;
+}
+.newaddr-contend li {
+	width: 97.19%;
+	height: 2.15rem;
+	padding-left: 2.81%;
+	border-bottom: 0.05rem solid #f7f7f7;
+}
+.newaddr-contend li p {
+	float: left;
+	width: 21%;
+	height: 2.15rem;
+	color: #585858;
+	line-height: 2.15rem;
+	font-size: 0.6rem;
+}
+.newaddr-contend li input {
+	float: left;
+	width: 75%;	
+	height: 0.6rem;
+	padding-top: 0.78rem;
+	color: #585858;
+	line-height: 0.6rem;
+	font-size: 0.6rem;
+	border: none;
+	outline: none;
+}
+.newaddr-footer {
+	width: 93.84%;
+	height: 2rem;
+	padding: 0 3.13%;
+}
+.newaddr-footer a {
+	display: block;
+	width: 100%;
+	height: 2rem;
+	border: 0;
+	background: #ff7d00;
+	color: #fff;
+	line-height: 2rem;
+	text-align: center;
+	font-size: 0.75rem;
+	border-radius: 0.13rem;
+	outline: none;
+}

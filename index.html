@@ -1,68 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+<head>
+	<meta charset="UTF-8">
+	<title>日升金</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/weilang.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<script src="js/zepto.min.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/touch.js" charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<div class="search-area">
+				<form action="">
+					<div class="search">
+						<input type="text" name="">
+					</div>
+					<div class="search-btn">
+						<input type="button" value="搜索" name="">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="main">
+			<div class="swiper-container advertise-img">
+				<div class="swiper-wrapper ">
+					<div class="swiper-slide">
+						<a href="" title="">
+							<img src="images/demoimg/advertise1.jpg" alt="日升金" title="日升金">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="" title="">
+							<img src="images/demoimg/advertise2.jpg" alt="日升金" title="日升金">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="" title="">
+							<img src="images/demoimg/advertise3.jpg" alt="日升金" title="日升金">
+						</a>
+					</div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="index-title">
+				<h2>今日推荐</h2>
+				<a href="" title="">更多</a>
+			</div>
+			<div class="goods-list recommend">
+				<dl>
+					<dt>
+						<a href="cn/goods_detail.html" title="">
+							<img src="images/demoimg/yaoshengji.jpg" alt="日升金" title="日升金">
+						</a>
+					</dt>
+					<dd>
+						<h3>
+							<a href="cn/goods_detail.html" title="">
+								XXXXXXXXXX
+							</a>
+						</h3>
+						<p>
+							<span>
+								￥
+								<strong>148</strong>
+								.00
+							</span>
+							<span>
+								100人已买
+							</span>
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="cn/goods_detail.html" title="">
+							<img src="images/demoimg/chishenm.jpg" alt="日升金" title="">
+						</a>
+					</dt>
+					<dd>
+						<h3>
+							<a href="cn/goods_detail.html" title="">
+								XXXXXXXXXX
+							</a>
+						</h3>
+						<p>
+							<span>
+								￥
+								<strong>148</strong>
+								.00
+							</span>
+							<span>
+								100人已买
+							</span>
+						</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="index-title">
+				<h2>会员产品</h2>
+				<a href="" title="">更多</a>
+			</div>
+			<div class="goods-list">
+				<dl>
+					<dt>
+						<a href="cn/goods_detail.html" title="">
+							<img src="images/demoimg/nianyefang.jpg" alt="日升金" title="">
+						</a>
+					</dt>
+					<dd>
+						<h3>
+							<a href="cn/goods_detail.html" title="">
+								XXXXXXXXXX
+							</a>
+						</h3>
+						<p>
+							<span>
+								￥
+								<strong>148</strong>
+								.00
+							</span>
+							<span>
+								100人已买
+							</span>
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="cn/goods_detail.html" title="">
+							<img src="images/demoimg/mickeySheet.jpg" alt="日升金" title="">
+						</a>
+					</dt>
+					<dd>
+						<h3>
+							<a href="cn/goods_detail.html" title="">
+								XXXXXXXXXX
+							</a>
+						</h3>
+						<p>
+							<span>
+								￥
+								<strong>148</strong>
+								.00
+							</span>
+							<span>
+								100人已买
+							</span>
+						</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="com-nav" id="footericon">
+				<a class="nav-select">首页</a>
+				<a href="cn/mall_class.html">商城</a>
+				<a href="cn/shopping_car_out.html">购物车</a>
+				<a href="cn/user_center.html">个人中心</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/swiper3.07.jquery.min.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/common.js" charset="utf-8" type="text/javascript"></script>
+	<script>
+		// 大图滚动效果
+		var mySwiper = new Swiper ('.swiper-container', {
+			direction: 'horizontal',
+			loop: true,
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+			// 如果需要分页器
+			pagination: '.swiper-pagination',
+		})  
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Happychildrendays by onfirechenlin</title>
-  </head>
-
-  <body>
-    <a id="forkme_banner" href="https://github.com/onfirechenlin/HappyChildrenDays">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Happychildrendays</h1>
-            <h2>To happy!</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/onfirechenlin/HappyChildrenDays/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/onfirechenlin/HappyChildrenDays/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <p>Return of the king, who but myself!</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/onfirechenlin">onfirechenlin</a> can be found on <a href="https://github.com/onfirechenlin/HappyChildrenDays">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
-    </div>
-
-    
-  </body>
+		// 点击footer中的按钮，改变样式
+		var getFooterA = $("#footericon a");
+		getFooterA.on("tap", function(){
+			changeFootericon(getFooterA, $(this), "nav-select", false);
+		})
+	</script>
+</body>
 </html>

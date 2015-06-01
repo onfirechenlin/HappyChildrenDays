@@ -1,0 +1,480 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>我的订单</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/myorder.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../js/touch.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<h2>我的订单</h2>
+			<a href="javascript:history.go(-1)" class="head-back-btn"></a href="user_center.html">
+		</div>
+		<div class="main">
+			<div class="send-item" id="sendItem">
+				<a href="javascript: 0" title="" class="send-item-select">全部</a>
+				<a href="javascript: 0" title="">代付款</a>
+				<a href="javascript: 0" title="">待发货</a>
+				<a href="javascript: 0" title="">待收货</a>
+				<a href="javascript: 0" title="">待评价</a>
+			</div>
+			<div class="send-list" id="sendList">
+				<div class="send-box send-box-show">
+					<div class="send-detail">
+						<div class="send-state clearfix">
+							<h4>交易成功</h4>
+							<div class="order-goods-list">
+								<label class="com-checkbox clearfix">
+									<input type="checkbox" name="" value="">
+									<span></span>
+								</label>
+								<dl>
+									<dt>
+										<a href="" title=""><img src="../images/5.jpg" alt="" title=""></a>
+									</dt>
+									<dd>
+										<div class="send-msg">
+											<h3>衣品天成2015春装新款 男士衬衫</h3>
+											<p>
+												<span>颜色：蓝色</span>
+												<span>尺码：180</span>
+											</p>
+										</div>
+									</dd>
+								</dl>
+								<div class="send-count">
+									<span>￥258.0</span>
+									<span>￥458.0</span>
+									<span>X1</span>
+								</div>
+							</div>
+						</div>
+						<div class="send-more">显示其余商品</div>
+						<div class="send-buymsg">
+							<span>共3件商品</span>
+							<span> 实付：<em>￥358</em></span>
+						</div>
+						<div class="send-btn">
+							<a class="btn-fill" href="evaluation.html">评价订单</a>
+							<a href="">查看物流</a>
+							<span>删除订单</span>
+						</div>
+					</div>
+					<div class="send-detail">
+						<div class="send-state clearfix">
+							<h4>交易成功</h4>
+							<div class="order-goods-list">
+								<label class="com-checkbox clearfix">
+									<input type="checkbox" name="" value="">
+									<span></span>
+								</label>
+								<dl>
+									<dt>
+										<a href="" title=""><img src="../images/5.jpg" alt="" title=""></a>
+									</dt>
+									<dd>
+										<div class="send-msg">
+											<h3>衣品天成2015春装新款 男士衬衫</h3>
+											<p>
+												<span>颜色：蓝色</span>
+												<span>尺码：180</span>
+											</p>
+										</div>
+									</dd>
+								</dl>
+								<div class="send-count">
+									<span>￥258.0</span>
+									<span>￥458.0</span>
+									<span>X1</span>
+								</div>
+							</div>
+						</div>
+						<div class="send-buymsg">
+							<span>共1件商品</span>
+							<span> 实付：<em>￥158</em></span>
+						</div>
+						<div class="send-btn">
+							<a class="btn-fill" href="evaluation.html">评价订单</a>
+							<a href="">查看物流</a>
+							<span>删除订单</span>
+						</div>
+					</div>
+					<div class="send-detail">
+						<div class="send-state clearfix">
+							<h4>待发货</h4>
+							<div class="order-goods-list">
+								<label class="com-checkbox clearfix">
+									<input type="checkbox" name="" value="">
+									<span></span>
+								</label>
+								<dl>
+									<dt>
+										<a href="" title=""><img src="../images/5.jpg" alt="" title=""></a>
+									</dt>
+									<dd>
+										<div class="send-msg">
+											<h3>衣品天成2015春装新款 男士衬衫</h3>
+											<p>
+												<span>颜色：蓝色</span>
+												<span>尺码：180</span>
+											</p>
+										</div>
+									</dd>
+								</dl>
+								<div class="send-count">
+									<span>￥258.0</span>
+									<span>￥458.0</span>
+									<span>X1</span>
+								</div>
+							</div>
+						</div>
+						<div class="send-buymsg">
+							<span>共1件商品</span>
+							<span> 实付：<em>￥158</em></span>
+						</div>
+						<div class="send-btn">
+							<span class="btn-fill">提醒发货</span>
+						</div>
+					</div>
+				</div>
+				<div class="send-box">
+					<div class="send-detail">
+						<div class="send-state clearfix">
+							<h4>交易成功</h4>
+							<div class="order-goods-list">
+								<label class="com-checkbox clearfix">
+									<input type="checkbox" name="" value="">
+									<span></span>
+								</label>
+								<dl>
+									<dt>
+										<a href="" title=""><img src="../images/5.jpg" alt="" title=""></a>
+									</dt>
+									<dd>
+										<div class="send-msg">
+											<h3>衣品天成2015春装新款 男士衬衫</h3>
+											<p>
+												<span>颜色：蓝色</span>
+												<span>尺码：180</span>
+											</p>
+										</div>
+									</dd>
+								</dl>
+								<div class="send-count">
+									<span>￥258.0</span>
+									<span>￥458.0</span>
+									<span>X1</span>
+								</div>
+							</div>
+						</div>
+						<div class="send-more">显示其余商品</div>
+						<div class="send-buymsg">
+							<span>共3件商品</span>
+							<span> 实付：<em>￥358</em></span>
+						</div>
+						<div class="send-btn">
+							<span>删除订单</span>
+						</div>
+					</div>
+					<div class="send-detail">
+						<div class="send-state clearfix">
+							<h4>待付款</h4>
+							<div class="order-goods-list">
+								<label class="com-checkbox clearfix">
+									<input type="checkbox" name="" value="">
+									<span></span>
+								</label>
+								<dl>
+									<dt>
+										<a href="" title=""><img src="../images/5.jpg" alt="" title=""></a>
+									</dt>
+									<dd>
+										<div class="send-msg">
+											<h3>衣品天成2015春装新款 男士衬衫</h3>
+											<p>
+												<span>颜色：蓝色</span>
+												<span>尺码：180</span>
+											</p>
+										</div>
+									</dd>
+								</dl>
+								<div class="send-count">
+									<span>￥258.0</span>
+									<span>￥458.0</span>
+									<span>X1</span>
+								</div>
+							</div>
+						</div>
+						<div class="send-buymsg">
+							<span>共1件商品</span>
+							<span> 实付：<em>￥158</em></span>
+						</div>
+						<div class="send-btn">
+							<a  class="btn-fill" href="payment.html">付款</a>
+						</div>
+					</div>
+				</div>
+				<div class="send-box">
+					<div class="send-detail">
+						<div class="send-state clearfix">
+							<h4>待发货</h4>
+							<div class="order-goods-list">
+								<label class="com-checkbox clearfix">
+									<input type="checkbox" name="" value="">
+									<span></span>
+								</label>
+								<dl>
+									<dt>
+										<a href="" title=""><img src="../images/5.jpg" alt="" title=""></a>
+									</dt>
+									<dd>
+										<div class="send-msg">
+											<h3>衣品天成2015春装新款 男士衬衫</h3>
+											<p>
+												<span>颜色：蓝色</span>
+												<span>尺码：180</span>
+											</p>
+										</div>
+									</dd>
+								</dl>
+								<div class="send-count">
+									<span>￥258.0</span>
+									<span>￥458.0</span>
+									<span>X1</span>
+								</div>
+							</div>
+						</div>
+						<div class="send-more">显示其余商品</div>
+						<div class="send-buymsg">
+							<span>共3件商品</span>
+							<span> 实付：<em>￥358</em></span>
+						</div>
+						<div class="send-btn">
+							<span class="btn-fill">提醒发货</span>
+						</div>
+					</div>
+					<div class="send-detail">
+						<div class="send-state clearfix">
+							<h4>待发货</h4>
+							<div class="order-goods-list">
+								<label class="com-checkbox clearfix">
+									<input type="checkbox" name="" value="">
+									<span></span>
+								</label>
+								<dl>
+									<dt>
+										<a href="" title=""><img src="../images/5.jpg" alt="" title=""></a>
+									</dt>
+									<dd>
+										<div class="send-msg">
+											<h3>衣品天成2015春装新款 男士衬衫</h3>
+											<p>
+												<span>颜色：蓝色</span>
+												<span>尺码：180</span>
+											</p>
+										</div>
+									</dd>
+								</dl>
+								<div class="send-count">
+									<span>￥258.0</span>
+									<span>￥458.0</span>
+									<span>X1</span>
+								</div>
+							</div>
+						</div>
+						<div class="send-buymsg">
+							<span>共1件商品</span>
+							<span> 实付：<em>￥158</em></span>
+						</div>
+						<div class="send-btn">
+							<span class="btn-fill">提醒发货</span>
+						</div>
+					</div>
+				</div>
+				<div class="send-box">
+					<div class="send-detail">
+						<div class="send-state clearfix">
+							<h4>已发货</h4>
+							<div class="order-goods-list">
+								<label class="com-checkbox clearfix">
+									<input type="checkbox" name="" value="">
+									<span></span>
+								</label>
+								<dl>
+									<dt>
+										<a href="" title=""><img src="../images/5.jpg" alt="" title=""></a>
+									</dt>
+									<dd>
+										<div class="send-msg">
+											<h3>衣品天成2015春装新款 男士衬衫</h3>
+											<p>
+												<span>颜色：蓝色</span>
+												<span>尺码：180</span>
+											</p>
+										</div>
+									</dd>
+								</dl>
+								<div class="send-count">
+									<span>￥258.0</span>
+									<span>￥458.0</span>
+									<span>X1</span>
+								</div>
+							</div>
+						</div>
+						<div class="send-more">显示其余商品</div>
+						<div class="send-buymsg">
+							<span>共3件商品</span>
+							<span> 实付：<em>￥358</em></span>
+						</div>
+						<div class="send-btn">
+							<span class="btn-fill">确认收货</span>
+							<span>查看物流</span>
+							<span>延长收货</span>
+						</div>
+					</div>
+					<div class="send-detail">
+						<div class="send-state clearfix">
+							<h4>待收货</h4>
+							<div class="order-goods-list">
+								<label class="com-checkbox clearfix">
+									<input type="checkbox" name="" value="">
+									<span></span>
+								</label>
+								<dl>
+									<dt>
+										<a href="" title=""><img src="../images/5.jpg" alt="" title=""></a>
+									</dt>
+									<dd>
+										<div class="send-msg">
+											<h3>衣品天成2015春装新款 男士衬衫</h3>
+											<p>
+												<span>颜色：蓝色</span>
+												<span>尺码：180</span>
+											</p>
+										</div>
+									</dd>
+								</dl>
+								<div class="send-count">
+									<span>￥258.0</span>
+									<span>￥458.0</span>
+									<span>X1</span>
+								</div>
+							</div>
+						</div>
+						<div class="send-buymsg">
+							<span>共1件商品</span>
+							<span> 实付：<em>￥158</em></span>
+						</div>
+						<div class="send-btn">
+							<span class="btn-fill">确认收货</span>
+							<span>延长收货</span>
+						</div>
+					</div>
+				</div>
+				<div class="send-box">
+					<div class="send-detail">
+						<div class="send-state clearfix">
+							<h4>交易成功</h4>
+							<div class="order-goods-list">
+								<label class="com-checkbox clearfix">
+									<input type="checkbox" name="" value="">
+									<span></span>
+								</label>
+								<dl>
+									<dt>
+										<a href="" title=""><img src="../images/5.jpg" alt="" title=""></a>
+									</dt>
+									<dd>
+										<div class="send-msg">
+											<h3>衣品天成2015春装新款 男士衬衫</h3>
+											<p>
+												<span>颜色：蓝色</span>
+												<span>尺码：180</span>
+											</p>
+										</div>
+									</dd>
+								</dl>
+								<div class="send-count">
+									<span>￥258.0</span>
+									<span>￥458.0</span>
+									<span>X1</span>
+								</div>
+							</div>
+						</div>
+						<div class="send-more">显示其余商品</div>
+						<div class="send-buymsg">
+							<span>共3件商品</span>
+							<span> 实付：<em>￥358</em></span>
+						</div>
+						<div class="send-btn">
+							<a href="evaluation.html" class="btn-fill">评价订单</a href="evaluation.html">
+							<span>查看物流</span>
+							<span>删除订单</span>
+						</div>
+					</div>
+					<div class="send-detail">
+						<div class="send-state clearfix">
+							<h4>待收货</h4>
+							<div class="order-goods-list">
+								<label class="com-checkbox clearfix">
+									<input type="checkbox" name="" value="">
+									<span></span>
+								</label>
+								<dl>
+									<dt>
+										<a href="" title=""><img src="../images/5.jpg" alt="" title=""></a>
+									</dt>
+									<dd>
+										<div class="send-msg">
+											<h3>衣品天成2015春装新款 男士衬衫</h3>
+											<p>
+												<span>颜色：蓝色</span>
+												<span>尺码：180</span>
+											</p>
+										</div>
+									</dd>
+								</dl>
+								<div class="send-count">
+									<span>￥258.0</span>
+									<span>￥458.0</span>
+									<span>X1</span>
+								</div>
+							</div>
+						</div>
+						<div class="send-buymsg">
+							<span>共1件商品</span>
+							<span> 实付：<em>￥158</em></span>
+						</div>
+						<div class="send-btn">
+							<a href="evaluation.html" class="btn-fill">评价订单</a href="evaluation.html">
+							<span>查看物流</span>
+							<span>删除订单</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script>
+		$("#sendItem").on('tap',("#sendItem a"), function(event) {
+			var obj = $(event.target)
+			var index = obj.index();
+			obj.attr('class', "send-item-select").siblings().removeAttr('class');
+			$(".send-box").eq(index).addClass('send-box-show').siblings().removeClass('send-box-show');
+		});
+		var listCheckBox = $(".main .com-checkbox");
+		var len = listCheckBox.length;
+		for(var i = 0; i < len; i++) {
+			new CheckBox(listCheckBox.eq(i));
+		}
+	</script>
+</body>
+</html>

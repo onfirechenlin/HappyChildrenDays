@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>我的收货地址</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/pan.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	 <meta name="format-detection"content="telephone = no">
+	<script src="../js/zepto.min.js" charset="utf-8" type="text/javascript"></script>
+	<script src="../js/iscroll.js" charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<h2>我的收货地址</h2>
+			<a href="javascript:history.go(-1)" class="head-back-btn"></a>
+		</div>
+		<div class="main">
+			<div class="myaddr-content" id="wrapper">
+				<div  id="scroller">
+					<ul>
+						<li>
+							<div>
+								<h2>收货人：王小丫</h2>
+								<h3>15800001111</h3>
+							</div>
+							<p>收货地址：福建省厦门市思明区软件园二期观日路40号之二302H</p>
+						</li>
+						<li>
+							<div>
+								<h2>收货人：王小丫</h2>
+								<h3>15800001111</h3>
+							</div>
+							<p>收货地址：福建省厦门市思明区软件园二期观日路40号之二302H</p>
+						</li>
+						<li>
+							<div>
+								<h2>收货人：王小丫</h2>
+								<h3>15800001111</h3>
+							</div>
+							<p>收货地址：福建省厦门市思明区软件园二期观日路40号之二302H</p>
+						</li>
+						<li>
+							<div>
+								<h2>收货人：王小丫</h2>
+								<h3>15800001111</h3>
+							</div>
+							<p>收货地址：福建省厦门市思明区软件园二期观日路40号之二302H</p>
+						</li>
+						<li>
+							<div>
+								<h2>收货人：王小丫</h2>
+								<h3>15800001111</h3>
+							</div>
+							<p>收货地址：福建省厦门市思明区软件园二期观日路40号之二302H</p>
+						</li>
+						<li>
+							<div>
+								<h2>收货人：王小丫</h2>
+								<h3>15800001111</h3>
+							</div>
+							<p>收货地址：福建省厦门市思明区软件园二期观日路40号之二302H</p>
+						</li>
+						<li>
+							<div>
+								<h2>收货人：王小丫</h2>
+								<h3>15800001111</h3>
+							</div>
+							<p>收货地址：福建省厦门市思明区软件园二期观日路40号之二302H</p>
+						</li>
+						<li>
+							<div>
+								<h2>收货人：王小丫</h2>
+								<h3>15800001111</h3>
+							</div>
+							<p>收货地址：福建省厦门市思明区软件园二期观日路40号之二302H</p>
+						</li>
+						<li>
+							<div>
+								<h2>收货人：王小丫</h2>
+								<h3>15800001111</h3>
+							</div>
+							<p>收货地址：福建省厦门市思明区软件园二期观日路40号之二302H</p>
+						</li>
+						<li>
+							<div>
+								<h2>收货人：王小丫</h2>
+								<h3>15800001111</h3>
+							</div>
+							<p>收货地址：福建省厦门市思明区软件园二期观日路40号之二302H</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="myaddr-footer">
+				<a href="new_address.html" title="">添加新地址</a>
+			</div>
+		</div>
+	</div>
+	<script src="../js/common.js" charset="utf-8" type="text/javascript"></script>
+	<script>
+		var myScroll = new IScroll('#wrapper', {
+			mouseWheel: false
+		});
+
+		$(".myaddr-content li").on("click", function() {
+			$(this).css({
+				"background-color" : "#ccc"
+			}).siblings().css({
+				"background-color" : "#fff"
+			})
+		})
+	</script>
+</body>
+</html>

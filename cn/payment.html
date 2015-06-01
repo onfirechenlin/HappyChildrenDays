@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>付款</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/weilang.css">
+	<script src="../js/zepto.min.js" charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<h2>付款</h2>
+			<a href="javascript:history.go(-1)" class="head-back-btn"></a>
+		</div>
+		<div class="main">
+			<div class="payment-list">
+				<div class="payment-goodsinfo">
+					<p id="payGoodsinfo">
+						衣品天成2015春装新款男士衬衫 潮 韩版男装长袖衬衫
+					</p>
+					<span>
+						￥258.0
+					</span>
+				</div>
+				<div class="pay-integral">
+					<p>
+						积分支付(当前积分<span>2000</span>)
+					</p>
+					<a>
+						如何获得积分
+					</a>
+				</div>
+				<div class="pay-needintegral">
+					<p>需要支付积分<span>680</span></p>
+				</div>
+				<div class="pay-zhifubao">
+					支付宝账号
+				</div>
+				<div class="pay-zhifubao-number">
+					<span>13505070078</span>
+					<a></a>
+				</div>
+				<div class="pay-balance">
+					<p>使用余额付款：<span>11</span>元</p>
+				</div>
+				<div class="pay-bankcard">
+					<p>使用银行卡付款：<span>99</span>元</p>
+				</div>
+				<div class="pay-addcard">
+					<span>添加银行卡</span>
+					<a></a>
+				</div>
+				<div class="pay-zfb-password">
+					<label for="zfbPassword" id="zfbPwPrompt" name="">支付宝支付密码</label>
+					<input type="password" id="zfbPassword" name="">
+				</div>
+				<div class="pay-findPassword">
+					<a href="" title="">找回支付密码</a>
+				</div>
+				<div class="pay-sure">
+					<input type="button" value="确认支付" name="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/common.js" charset="utf-8" type="text/javascript"></script>
+	<script>
+		// 付款页点击“支付宝支付密码”样式控制
+		var getZfbPwTxt = $("#zfbPassword");
+		var getZfbPrompt = $("#zfbPwPrompt");
+		getZfbPwTxt.on("keyup", function() {
+			var pwTxt = $(this).val();
+			if(pwTxt != "") {
+				getZfbPrompt.css({"display": "none"})
+			} else {
+				getZfbPrompt.css({"display": "block"})
+			}
+		})
+
+		// 设置payGoodsinfo标签中的文字的最后一行显示省略号
+		var getPayGoodsinfo = $("#payGoodsinfo");
+		var payNeedTxt = getPayGoodsinfo.text().substring(0, 34) + "...";
+		getPayGoodsinfo.text(payNeedTxt);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+@charset "utf-8";
+html {
+	font-size: 40px;
+}
+.head {
+	position: relative;
+	width: 100%;
+}
+.godel-card {
+	position: absolute;
+	left: 80.47%;
+	bottom: 0.7rem;
+	width: 5.31%;
+	height: 0.825rem;
+	background: url("../images/godel_cart.png") no-repeat;
+	background-size: 100%;
+}
+.godel-shop-link {
+	position: absolute;
+	right: 0;
+	bottom: 0.6rem; 
+	width: 11.25%;
+	height: 0.825rem;
+}
+.godel-shop-link span {
+	float: right;
+	width: 15.28%;
+	height: 0.275rem;
+	margin: 0.275rem 12.5% 0 0;
+	border-radius: 50%;
+	background-color: #333;
+}
+/*大图滚动的开始*/
+.advertise-img {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 6.75rem;
+}
+.advertise-img a,
+.advertise-img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/*大图滚动的结束*/
+.godel-con {
+	width: 97.5%;
+	padding: 2.19% 0 0 2.5%;
+	background: #fff;
+	-webkit-box-shadow: 0 0.5rem 0 0 #f6f6f6;
+	box-shadow: 0 0.5rem 0 0 #f6f6f6;
+}
+.godel-con a {
+	display: block;
+	overflow: hidden;
+	width: 80.32%;
+	height: 1.7rem;
+	color: #585858;
+	font-size: 0.65rem;
+}
+.godel-price {
+	height: 1.45rem;
+}
+.godel-price span {
+	float: left;
+	width: 33.3%;
+	line-height: 1.45rem;
+	color: #585858;
+	font-size: 0.6rem;
+}
+.godel-choose {
+	position: relative;
+	width: 96.72%;
+	height: 1.5rem;
+	margin: 0.5rem 0 0.5rem 0;
+	padding-left: 3.28%;
+	background: #fff;
+			
+}
+.godel-choose span {
+	float: left;
+	width: 10.34%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	color: #585858;
+	font-size: 0.6rem;
+}
+.godel-eval-content {
+	width: 95%;
+	padding: 0 2.5%;
+	background: #fff;
+}
+.godel-evaluation {
+	height: 1.525rem;
+	-webkit-box-shadow: 0 1px 0 0 #cecece;
+	box-shadow: 0 1px 0 0 #cecece;
+}
+.godel-evaluation span {
+	line-height: 1.525rem;
+	color: #585858;
+	font-size: 0.6rem;
+}
+.godel-view-eval {
+	overflow: hidden;
+	height: 3.9rem;
+	-webkit-box-shadow: 0 1px 0 0 #cecece;
+	box-shadow: 0 1px 0 0 #cecece;
+}
+.godel-view-eval dl {
+	position: relative;
+	width: 100%;
+	height: 3.9rem;
+	padding: 0.425rem 0 0 0.78%;
+}
+.godel-view-eval dt {
+	overflow: hidden;
+	width: 7.81%;
+	height: 1.25rem;
+	border: 1px solid #fdfdfd;
+	border-radius: 50%;
+}
+.godel-view-eval dt img {
+	display: block;
+	width: 100%;
+	height: 1.25rem;
+}
+.godel-view-eval dd {
+	width: 100%;
+	height: 3.5rem;
+}
+.godel-view-eval span {
+	position: absolute;
+	left: 10.63%;
+	top: 0.65rem;
+	width: 84.38%;
+	height: 1.25rem;
+	font-size: 0.6rem;
+}
+.godel-view-eval h4 {
+	height: 1.1rem;
+	line-height: 1.1rem;
+	color: #585858;
+	font-size: 0.7rem;
+}
+.godel-view-eval p {
+	height: 1.15rem;
+	color: #999;
+	font-size: 0.6rem;
+}
+.godel-more {
+	height: 1.6rem;
+}
+.godel-more span {
+	display: block;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	color: #585858;
+	font-size: 0.6rem;
+	text-align: center;
+}
+.godel-function {
+	height: 2.395rem;
+}
+.godel-consu {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 40.63%;
+	height: 2.5rem;
+	padding-top: 0.25rem;
+	background-color: #fff;
+}
+.godel-consu a {
+	float: left;
+	width: 50%;
+	padding-top: 1.375rem;
+	color: black;
+	font-size: 0.6rem;
+	text-align: center;
+	-webkit-box-shadow: 1px 0 0 0 #cecece;
+	box-shadow: 1px 0 0 0 #cecece;
+}
+.godel-consu a:nth-child(1) {
+	background: url("../images/godel_online.png") no-repeat;
+	background-size: 100%;
+}
+.godel-consu a:nth-child(2) {
+	background: url("../images/godel_collection.png") no-repeat;
+	background-size: 100%;
+}
+.godel-shop-cart {
+	float: left;
+	width: 59.37%;
+	height: 2.75rem;
+	font-size: 0.6rem;
+}
+.godel-shop-cart a {
+	float: left;
+	width: 50%;
+	height: 2.75rem;
+	line-height: 2.75rem;
+	color: #fff;
+	font-size: 0.75rem;
+	text-align: center;
+}
+.godel-shop-cart a:nth-child(1) {
+	background-color: #ff7d00;
+}
+.godel-shop-cart a:nth-child(2) {
+	background-color: #ff5400;
+}

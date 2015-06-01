@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>商城分类</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/weilang.css">
+	<link rel="stylesheet" href="../css/swiper.css">
+	<script src="../js/zepto.min.js" charset="utf-8" type="text/javascript"></script>
+	<script src="../js/touch.js" charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<h2>商城分类</h2>
+			<a href="javascript:history.go(-1)" class="head-back-btn"></a>
+		</div>
+		<div class="main">
+			<div class="swiper-container advertise-img">
+				<div class="swiper-wrapper ">
+					<div class="swiper-slide">
+						<a href="" title="">
+							<img src="../images/demoimg/advertise1.jpg" alt="日升金" title="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="" title="">
+							<img src="../images/demoimg/advertise2.jpg" alt="日升金" title="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="" title="">
+							<img src="../images/demoimg/advertise3.jpg" alt="日升金" title="">
+						</a>
+					</div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="goods-class">
+				<ul>
+					<li>
+						<a href="nutrition_food.html" title="">
+							<i></i>
+							<span>营养食品</span>
+						</a>
+					</li>
+					<li>
+						<a href="daily_food.html" title="">
+							<i></i>
+							<span>日常食品</span>
+						</a>
+					</li>
+					<li>
+						<a href="beauty_cosmetics.html" title="">
+							<i></i>
+							<span>美容彩妆</span>
+						</a>
+					</li>
+					<li>
+						<a href="nursing.html" title="">
+							<i></i>
+							<span>个人护理</span>
+						</a>
+					</li>
+					<li>
+						<a href="home_textile.html" title="">
+							<i></i>
+							<span>家居家纺</span>
+						</a>
+					</li>
+					<li>
+						<a href="shoesbag.html" title="">
+							<i></i>
+							<span>服饰鞋包</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="index-title">
+				<h2>会员产品</h2>
+				<a href="" title="">更多</a>
+			</div>
+			<div class="goods-list">
+				<dl>
+					<dt>
+						<a href="" title="">
+							<img src="../images/demoimg/nianyefang.jpg" alt="" title="">
+						</a>
+					</dt>
+					<dd>
+						<h3>
+							<a href="" title="">
+								XXXXXXXXXX
+							</a>
+						</h3>
+						<p>
+							<span>
+								￥
+								<strong>148</strong>
+								.00
+							</span>
+							<span>
+								100人已买
+							</span>
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="" title="">
+							<img src="../images/demoimg/mickeySheet.jpg" alt="" title="">
+						</a>
+					</dt>
+					<dd>
+						<h3>
+							<a href="" title="">
+								XXXXXXXXXX
+							</a>
+						</h3>
+						<p>
+							<span>
+								￥
+								<strong>148</strong>
+								.00
+							</span>
+							<span>
+								100人已买
+							</span>
+						</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="com-nav" id="footericon">
+				<a href="../index.html" class="nav-select">首页</a>
+				<a href="mall_class.html">商城</a>
+				<a href="shopping_car_out.html">购物车</a>
+				<a href="user_center.html">个人中心</a>
+			</div>
+		</div>
+	</div>
+	<script src="../js/swiper3.07.jquery.min.js" charset="utf-8" type="text/javascript"></script>
+	<script src="../js/common.js" charset="utf-8" type="text/javascript"></script>
+	<script>
+		// 大图滚动效果
+		var mySwiper = new Swiper ('.swiper-container', {
+			direction: 'horizontal',
+			loop: true,
+
+			// 如果需要分页器
+			pagination: '.swiper-pagination',
+		})  
+
+		// 点击footer中的按钮，改变样式
+		var getFooterA = $("#footericon a");
+		getFooterA.on("tap", function(){
+			changeFootericon(getFooterA, $(this), "nav-select", true);
+		})
+	</script>
+</body>
+</html>

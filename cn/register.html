@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/apply.css">
+	<script src="../js/zepto.min.js" charset="utf-8" type="text/javascript"></script>
+	<script src="../js/touch.js" charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head">
+			<h2>注册</h2>
+		</div>
+		<div class="main">
+			<div class="register">
+				<form action="">
+					<div class="userdate-identif clearfix">
+						<label for="registerTelCheck" class="userdate-tip"> 手机号码</label>
+						<input type="text" id="registerTelCheck" placeholder="">
+						<div class="userdate-sbtn" id="registerCheckBtn">
+							<input type="button" value="获取验证码">
+						</div>
+					</div>
+					<div class="userdate-identif clearfix">
+						<label class="userdate-tip">验证码</label>
+						<input type="text">	
+					</div>
+					<div class="userdate-identif clearfix">
+						<label class="userdate-tip"> 推荐人</label>
+						<input type="text">	
+					</div>
+					<div class="userdate-identif clearfix">
+						<label for="registerNewPw" class="userdate-tip">密码</label>
+						<input type="password" id="registerNewPw" placeholder="">	
+						<p id="registerNewPwTip"></p>
+					</div>
+					<div class="userdate-identif clearfix">
+						<label for="registerSurePw" class="userdate-tip">确认密码</label>
+						<input type="password" id="registerSurePw">	
+						<p id="registerSurePwTip"></p>
+					</div>
+					<div class="register-agree" id="registerAgreeOrNo">	同意神农氏电商平台《服务条款》
+					<form action="">
+						<input type="hidden" name="" value="">
+					</form>
+					</div>
+					<div class="userdate-bbtn">
+						<input type="submit" value="确认">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="../js/common.js" charset="utf-8" type="text/javascript"></script>
+	<script>
+		var registerAgree = $("#registerAgreeOrNo");
+		var registerTel = $("#registerTelCheck");
+		var registerCkTel = $("#registerCheckBtn");
+		var telReg = /^(18[0-9]|13[0-9]|15[0|3|6|8|9])\d{8}$/g;
+		
+		// 验证手机号码
+		registerCkTel.on("tap", function() {
+			telReg.lastIndex = 0;
+			var registerTel = $("#registerTelCheck");
+			var registerTelVal = registerTel.val();
+			if(!telReg.test(registerTelVal)){
+				registerTel.val("");
+				registerTel.attr("placeholder","输入有误，重新输入手机号码");
+		    };
+		})
+
+		// 验证密码
+		var newRegPassword = $("#registerNewPw");
+		var sureRegPassword = $("#registerSurePw");
+		var newRegPasswordTip  =$("#registerNewPwTip");
+		var sureRegPasswordTip  =$("#registerSurePwTip");
+		var registerReg = /^\w{6,18}$/ig;
+
+		// 判断密码
+		newRegPassword.on("blur", function() {
+			registerReg.lastIndex = 0;
+			var newRegPasswordVal = $("#registerNewPw").val();
+			if (registerReg.test(newRegPasswordVal)) {
+				newRegPasswordTip.text("符合!");
+
+				// 判断确认密码
+				sureRegPassword.on("blur", function() {
+					var newRegPasswordVal = $("#registerNewPw").val();
+					var sureRegPasswordVal = $("#registerSurePw").val();
+
+					if (sureRegPasswordVal != newRegPasswordVal) {
+						sureRegPasswordTip.text("不符合");
+					} else{
+						sureRegPasswordTip.text("符合！");
+					};
+				})
+			} else{
+				newRegPasswordTip.text("不符合");
+			};
+		})
+
+		// 聚焦的时候没显示东西
+		newRegPassword.on("focus", function() {
+			newRegPasswordTip.text("");
+		})
+		sureRegPassword.on("focus", function() {
+			sureRegPasswordTip.text("");
+		})
+
+		// 点击是否同意条款
+		var agreeOrUnagree = true;
+			registerAgree.on("tap", function() {
+				if (agreeOrUnagree) {
+					registerAgree.addClass("register-agree-select")
+					agreeOrUnagree = false;
+				} else{
+					registerAgree.removeClass("register-agree-select")
+					agreeOrUnagree = true;
+				};
+			})	
+
+	</script>
+</body>
+</html>
